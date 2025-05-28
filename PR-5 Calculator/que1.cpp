@@ -60,22 +60,22 @@ main()
         {
         case 1:
 
-            cout << "Addition of" << num1 << " and " << num2 << " is " << sum(num1, num2);
+            cout << "Addition of " << num1 << " and " << num2 << " is " << sum(num1, num2);
             break;
 
         case 2:
-            cout << "subtraction of" << num1 << " and " << num2 << " is " << sub(num1, num2);
+            cout << "subtraction of " << num1 << " and " << num2 << " is " << sub(num1, num2);
             break;
 
         case 3:
-            cout << "multiplication of" << num1 << " and " << num2 << " is " << mul(num1, num2);
+            cout << "multiplication of " << num1 << " and " << num2 << " is " << mul(num1, num2);
             break;
 
         case 4:
-            cout << "division of" << num1 << " and " << num2 << " is " << divison(num1, num2);
+            cout << "division of " << num1 << " and " << num2 << " is " << divison(num1, num2);
             break;
         case 5:
-            cout << "moduler of" << num1 << " and " << num2 << " is " << moduler(num1, num2);
+            cout << "moduler of " << num1 << " and " << num2 << " is " << moduler(num1, num2);
             break;
         }
     } while (ch != 0);
