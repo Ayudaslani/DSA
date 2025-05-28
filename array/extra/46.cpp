@@ -1,36 +1,32 @@
+// Find the count of perfect square numbers in an array.
 #include <iostream>
 using namespace std;
 main()
 {
     int size;
-    cout << "Enter the size of array :-";
+    cout << "ente the size :- ";
     cin >> size;
-
     int a[size];
-    cout << "Input array Element :-" << endl;
-
-    
+    cout << "Input Array :- ";
     for (int i = 0; i < size; i++)
     {
         cin >> a[i];
     }
-    cout << "Output Array :-" << endl;
+    cout << "Output array :- ";
     for (int i = 0; i < size; i++)
     {
         cout << a[i] << " ";
     }
-    cout << endl;
-
-    int value;
-    cout << "Enter the value :- ";
-    cin >> value;
-
     for (int i = 0; i < size; i++)
     {
-        if (a[i] == value)
+        int count = 0;
+        for (int j = 1; j < size; j++)
         {
-            cout << i;
-            break;
+            if (j * j == a[i])
+            {
+                count++;
+            }
         }
+        
     }
 }

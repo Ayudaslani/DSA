@@ -1,36 +1,31 @@
 #include <iostream>
 using namespace std;
+
 main()
 {
     int size;
-    cout << "Enter the size of array :-";
+    cout << "Enter the size of the array :- ";
     cin >> size;
-
     int a[size];
-    cout << "Input array Element :-" << endl;
-
-    
+    cout << "Input Array :- " << endl;
     for (int i = 0; i < size; i++)
     {
         cin >> a[i];
     }
-    cout << "Output Array :-" << endl;
+    cout << "Output Array :- " << endl;
     for (int i = 0; i < size; i++)
     {
         cout << a[i] << " ";
     }
-    cout << endl;
-
-    int value;
-    cout << "Enter the value :- ";
-    cin >> value;
+    int num;
+    cout << "\nEnter the any number :- ";
+    cin >> num;
 
     for (int i = 0; i < size; i++)
     {
-        if (a[i] == value)
+        if (a[i] % num == 0)
         {
-            cout << i;
-            break;
+            cout << a[i] << " ";
         }
     }
 }

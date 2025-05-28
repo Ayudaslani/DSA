@@ -3,34 +3,32 @@ using namespace std;
 main()
 {
     int size;
-    cout << "Enter the size of array :-";
+    cout << "Enter the size :- ";
     cin >> size;
 
+    cout << "Input array :- ";
     int a[size];
-    cout << "Input array Element :-" << endl;
-
-    
     for (int i = 0; i < size; i++)
     {
         cin >> a[i];
     }
-    cout << "Output Array :-" << endl;
+    cout << "output array :- ";
+
     for (int i = 0; i < size; i++)
     {
         cout << a[i] << " ";
     }
     cout << endl;
-
-    int value;
-    cout << "Enter the value :- ";
-    cin >> value;
-
+    int max = a[0];
+    int smax;
     for (int i = 0; i < size; i++)
     {
-        if (a[i] == value)
+        if (a[i] > max)
+
         {
-            cout << i;
-            break;
-        }
+            smax = max;
+            max = a[i];
+        } 
     }
+    cout << "The largest product of two elements in the array :- " << max * smax << endl;
 }

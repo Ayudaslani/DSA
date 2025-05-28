@@ -25,6 +25,7 @@ main()
         min = a[0];
         smin = a[1];
     }
+    
     else
     {
         min = a[1];
@@ -44,5 +45,5 @@ main()
         }
     }
     cout << endl;
-    cout << "Second smallest element :- " << smin;
+    cout << "The smallest product of two elements in the array. :- " << smin * min;
 }
