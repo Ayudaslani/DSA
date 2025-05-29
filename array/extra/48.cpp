@@ -1,12 +1,14 @@
+// Check if an array contains only distinct elements.
 #include <iostream>
 using namespace std;
 
-int main()
+main()
 {
     int size;
     cout << "Enter the size :- ";
     cin >> size;
     int a[size];
+    cout << "Input array :- ";
     for (int i = 0; i < size; i++)
     {
         cin >> a[i];
@@ -16,30 +18,26 @@ int main()
     {
         cout << a[i] << " ";
     }
-    cout << endl;
 
     int count = 0;
-
     for (int i = 0; i < size; i++)
     {
-        int num = a[i];
-        int isPerfect = 0;
-
-        for (int j = 1; j * j <= num; j++)
+        for (int j = i + 1; j < size; j++)
         {
-            if (j * j == num)
+            if (a[i] == a[j])
             {
-                isPerfect = 1;
+                count++;
                 break;
             }
         }
-
-        if (isPerfect)
-        {
-            count++;
-        }
     }
-
-    cout << "Count of perfect square numbers: " << count << endl;
-    return 0;
+    cout << endl;
+    if (count == 0)
+    {
+        cout << "array contains only distinct elements." << endl;
+    }
+    else
+    {
+        cout << "array can not  contains only distinct elements." << endl;
+    }
 }
