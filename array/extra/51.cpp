@@ -1,29 +1,26 @@
+
 #include <iostream>
 using namespace std;
+
 main()
 {
     int size;
-    cout << "Enter the size :- ";
+    cout << "enter the size :-";
     cin >> size;
 
-    int a[size];
+    int a[size - 1];
     cout << "Input Array :- ";
     for (int i = 0; i < size - 1; i++)
     {
         cin >> a[i];
     }
-    cout << "Output Array :- ";
-    for (int i = 0; i < size; i++)
-    {
-        cout << a[i] << " ";
-    }
+
     int sum = 0;
-    for (int i = 0; i < size; i++)
+    int total = size * (size + 1) / 2;
+    for (int i = 0; i < size - 1; i++)
     {
         sum += a[i];
     }
-    int total = size * (size + 1) / 2;
     int missing = total - sum;
-
-    cout << "\nMissing number :- " << missing << endl;
+    cout << "the missing number is " << missing << endl;
 }

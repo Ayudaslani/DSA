@@ -3,13 +3,10 @@ using namespace std;
 #include "function.cpp"
 main()
 {
-
     int ch;
     int num1, num2;
-
     do
     {
-
         cout << "\nPress  1 for + :- " << endl;
         cout << "Press  2 for - :- " << endl;
         cout << "Press  3 for * :- " << endl;

@@ -34,7 +34,7 @@ int main()
             }
         }
 
-        if (isPerfect)
+        if (isPerfect == 1)
         {
             count++;
         }
