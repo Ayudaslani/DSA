@@ -126,12 +126,12 @@ int main()
         cout << "Press 3 for search  " << endl;
         cout << "Press 4 for Delete " << endl;
         cout << "Press 5 for reverse " << endl;
-        cout << "Press 6 exits " << endl;
+        cout << "Press 0 exits " << endl;
 
         cout << "Enter the choice :- " << endl;
         cin >> ch;
 
-        if (ch == 6)
+        if (ch == 0)
         {
             cout << "--------- Thank You -------" << endl;
             break;
@@ -166,7 +166,7 @@ int main()
             break;
 
         default:
-            break;
+            cout << "Invalid Choice !!!!";
         }
     }
 
